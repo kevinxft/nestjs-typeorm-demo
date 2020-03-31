@@ -5,7 +5,7 @@ import { PoetryService } from './poetry.service';
 import { PoetryController } from './poetry.controller';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([PoetryEntity])],
+  imports: [TypeOrmModule.forFeature([PoetryEntity], 'gsc')],
   providers: [PoetryService],
   controllers: [PoetryController],
 })

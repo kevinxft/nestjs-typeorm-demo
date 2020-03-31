@@ -6,7 +6,7 @@ import { Repository } from 'typeorm';
 @Injectable()
 export class PoetryService {
   constructor(
-    @InjectRepository(PoetryEntity)
+    @InjectRepository(PoetryEntity, 'gsc')
     private readonly poetryRepository: Repository<PoetryEntity>,
   ) {}
 
